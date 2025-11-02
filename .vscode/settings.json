@@ -66,5 +66,5 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "CIS4930-Spacewalk.sln"
+    "dotnet.defaultSolution": "Spacewalk.sln"
 }
