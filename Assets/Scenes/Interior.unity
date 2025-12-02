@@ -6762,9 +6762,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1fe727d4a9394a73b3e6a00dd9a45a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneChangeInteractable
-  targetSceneName: Main
+  targetSceneName: Space
   targetSpawnPointName: SpaceSpawn
-  sceneToUnload: Interior
+  sceneToUnload: 
   sceneGravity: {x: 0, y: 0, z: 0}
 --- !u!114 &1164325292
 MonoBehaviour:
