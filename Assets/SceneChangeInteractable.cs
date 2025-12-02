@@ -67,6 +67,13 @@ public class SceneChangeInteractable : MonoBehaviour
         if (!string.IsNullOrEmpty(sceneToUnload))
         {
             Scene oldScene = SceneManager.GetSceneByName(sceneToUnload);
+            foreach (GameObject rootObj in oldScene.GetRootGameObjects())
+            {
+                foreach (AudioSource audio in rootObj.GetComponentsInChildren<AudioSource>())
+                {
+                    audio.Stop();
+                }
+            }
             if (oldScene.isLoaded)
             {
                 Debug.Log("Unloading scene: " + sceneToUnload);
